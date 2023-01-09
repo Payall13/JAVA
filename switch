@@ -1,0 +1,28 @@
+import java.util.*;
+class switch1
+{
+	public static void main(String args[])
+	{
+		char c;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter color code");
+		c=sc.next().charAt(0);
+		switch(c)
+		{
+			case 'r':
+			case 'R':
+			System.out.println("red");
+			break;
+			case 'g':
+			case 'G':
+			System.out.println("green");
+			break;
+			case 'y':
+			case 'Y':
+			System.out.println("yellow");
+			default:
+			System.out.println("invalid color code");
+			break;
+		}
+	}
+}
