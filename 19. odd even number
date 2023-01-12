@@ -1,0 +1,28 @@
+// odd even numbers
+import java.util.*;
+class oddeven
+{
+	public static void main(String args[])
+	{
+	int n,i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter n:");
+		n=sc.nextInt();
+		if(n%2==0)
+		{
+			System.out.println(n + "is even number");
+		}
+		else
+		{
+			System.out.println(n + "is odd number");
+		}
+	}
+}
+
+
+
+
+output:
+enter n:
+15
+15 is odd number
