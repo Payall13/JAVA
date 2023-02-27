@@ -1,0 +1,18 @@
+interface eatable
+{
+	void eat();
+}
+class testanonymousinner1
+{
+	public static void main(String args[])
+	{
+		eatable e=new eatable()
+		{
+			public void eat()
+			{
+				System.out.println("nice fruits");
+			}
+		};
+		e.eat();
+	}
+}
