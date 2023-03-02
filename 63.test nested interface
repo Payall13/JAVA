@@ -1,0 +1,20 @@
+interface showable
+{
+	void show();
+	interface message
+	{
+		void msg();
+	}
+}
+class testnestedinterface1 implements showable.message
+{
+	public void msg()
+	{
+		System.out.println("hello nested interface");
+	}
+	public static void main(String args[])
+	{
+		showable.message message=new testnestedinterface1();
+		message.msg();
+	}
+}
