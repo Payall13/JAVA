@@ -1,0 +1,16 @@
+class enum2
+{
+    public enum season{ winter,spring,summer,fall}
+    public static void main(String argc[])
+    {
+        for (season s:season.values())
+        {
+            System.out.println(s);
+        }
+        System.out.println("value of winter is :" + season.valueOf ("winter"));    
+        System.out.println("value of winter is :" + season.valueOf ("winter").ordinal());    
+        System.out.println("value of summer is :" + season.valueOf ("summer").ordinal());    
+    }
+}
+
+
