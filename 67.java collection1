@@ -1,0 +1,26 @@
+//Linkedlist in java
+
+import java.util.*;
+public class collection1 
+{
+    public static void main(String[] args) 
+    {
+        LinkedList <String> al = new LinkedList<String>();
+        al.add("bhumi");
+        al.add("ridham");
+        al.add("nisha");
+        al.add("mira");
+        al.add("kinjal");
+        Iterator<String> itr = al.iterator();
+        while(itr.hasNext())
+        {
+            System.out.println(itr.next());
+        }
+    }    
+}
+
+/*bhumi
+ridham
+nisha
+mira
+kinjal */
