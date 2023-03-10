@@ -1,0 +1,22 @@
+import java.util.*;
+public class collection5 
+{
+    public static void main(String[] args) 
+    {
+        TreeSet<String>Set = new TreeSet<String>();
+        Set.add("HIF");
+        Set.add("hif");
+        Set.add("JKL");
+        Set.add("jkl");
+        Iterator<String>itr = Set.iterator();
+        while(itr.hasNext())
+        {
+            System.out.println(itr.next());
+        }
+    }  
+}
+
+/*HIF
+JKL
+hif
+jkl */
