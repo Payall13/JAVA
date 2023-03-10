@@ -1,0 +1,12 @@
+import java.util.regex.*;
+public class regexample3
+{
+	public static void main(String args[])
+	{
+		System.out.println(Pattern.matches("[amn]","abcd"));
+		System.out.println(Pattern.matches("[amn]","a"));
+		System.out.println(Pattern.matches("[amn]","ammma"));
+		System.out.println(Pattern.matches("[amn]","n"));
+		System.out.println(Pattern.matches("[a-dm-p]","h"));
+	}
+}
