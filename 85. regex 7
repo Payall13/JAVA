@@ -1,0 +1,24 @@
+import java.util.regex.*;
+public class regexample7
+{
+	public static void main(String args[])
+	{
+		System.out.println("by character classes and qauntifiers d...");
+		System.out.println(Pattern.matches("[789]{1}[0-9]{9}","9953038949"));
+		System.out.println(Pattern.matches("[789]{1}[0-9]{9}","9953038949"));
+		
+		System.out.println(Pattern.matches("[789][0-9]{9}","9953038940"));
+		System.out.println(Pattern.matches("[789][0-9]{9}","6953038949"));
+		System.out.println(Pattern.matches("[789][0-9]{9}","8853038949"));
+		
+		System.out.println("by character...");
+		System.out.println(Pattern.matches("[789]{1} \\d {9}","8853038940"));
+		System.out.println(Pattern.matches("[789]{1} \\d {9}","3353038940"));
+	}
+}
+		
+		
+		
+		
+		
+		
