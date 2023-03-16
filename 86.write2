@@ -1,0 +1,18 @@
+import java.io.*;
+class write2
+{
+	public static void main(String args[])
+	{
+		try
+		{
+			FileOutputStream fos=new FileOutputStream("C://payal//write2.txt");
+			fos.write(69);
+			fos.close();
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println("error");
+		}
+	}
+}
