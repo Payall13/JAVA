@@ -1,1 +1,22 @@
-
+import java.io.*;
+import java.util.*;
+class write3a
+{
+	public static void main(String args[])throws Exception
+	{
+		Scanner sc=new Scanner (System.in);
+		String s;
+		FileOutputStream fos=new FileOutputStream("C://payal//write3a.txt");
+		while (true)
+		{
+			System.out.print("enter string:");
+			s=sc.nextLine();
+			if(s.length()==0)
+				break;
+			byte b[]=s.getBytes();
+			fos.write(b);
+			
+		}
+		fos.close();
+	}
+}
