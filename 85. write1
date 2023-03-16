@@ -1,0 +1,10 @@
+import java.io.*;
+class write1
+{
+	public static void main(String args[])throws Exception
+	{
+		FileOutputStream fos=new FileOutputStream ("C://payal//write1.txt");
+		fos.write(65);
+		fos.close();
+	}
+}
