@@ -1,0 +1,14 @@
+import java.io.*;
+class write4
+{
+	public static void main(String args[])throws Exception
+	{
+		String s="hello payal";
+		byte b[]=s.getBytes();
+		FileOutputStream fos=new FileOutputStream("C://payal//write4.txt");
+		BufferedOutputStream bos= new BufferedOutputStream(fos);
+		bos.write(b);
+		bos.close();
+		fos.close();
+	}
+}
