@@ -1,0 +1,16 @@
+import java.io.*;
+class read5
+{
+	public static void main(String args[])throws Exception
+	{
+		int b;
+		FileInputStream fis=new FileInputStream("C://payal//write,5.txt");
+		DataInputStream dis=new DataInputStream(fis);
+		while((b=dis.read())!=-1)
+		{
+			System.out.println((char)b);
+		}
+		dis.close();
+		fis.close();
+	}
+}
