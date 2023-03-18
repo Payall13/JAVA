@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+public class readerexample2
+{
+	public static void main(String args[])
+	{
+		try
+		{
+			Scanner sc=new Scanner(System.in);
+			String s;
+			System.out.println("enter file name");
+			s=sc.nextLine();
+			Reader reader=new FileReader(s);
+			BufferedReader br=new BufferedReader(reader);
+			int data;
+			while((data=br.read())!=-1)
+			{
+				System.out.println((char)data);
+			}
+			br.close();
+			reader.close();
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex.getMessage());
+		}
+	}
+}
