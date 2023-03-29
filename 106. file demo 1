@@ -1,0 +1,23 @@
+import java.io.*;
+public class filedemo1
+{
+	public static void main(String args[])
+	{
+		try
+		{
+			File file=new File("javafile123.txt");
+			if(file.createNewFile())
+			{
+				System.out.println("new file is created");
+			}
+			else
+			{
+				System.out.println("file already exists");
+			}
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+}
