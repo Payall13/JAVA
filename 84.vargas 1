@@ -1,1 +1,22 @@
+class vargas1
+{
+	static int sum(int...n)
+	{
+		int sum=0;
+		System.out.println("");
+		for(int n1:n)
+		{
+			System.out.println(n1+"");
+			sum+=n1;
+		}
+		return(sum);
+	}
+	public static void main(String args[])
+	{
+		System.out.println("two args sum="+sum(10,20));
+		System.out.println("three args sum="+sum(10,20,30));
+		System.out.println("four args sum="+sum(10,20,30,40));
+	}
+}
 
+		
