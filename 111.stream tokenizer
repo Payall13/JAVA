@@ -1,1 +1,18 @@
-
+import java.io.*;
+class streamtokenizer1
+{
+	public static void main(String args[])throws Exception
+	{
+		Reader r=new FileReader("output.txt");
+		StreamTokenizer st=new StreamTokenizer(r);
+		int x;
+		while((x=st.nextToken())!=StreamTokenizer.TT_EOF)
+		{
+			if(x==st.TT_NUMBER)
+				System.out.println("number="+st.nval);
+			else if(x==st.TT_WORD)
+				System.out.println("word="+st.sval);
+		}
+		r.close();
+	}
+}
