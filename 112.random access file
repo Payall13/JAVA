@@ -1,1 +1,22 @@
-
+import java.io.*;
+class randomaccessfile1
+{
+	public static void main(String args[])throws Exception
+	{
+		RandomAccessFile rf=new RandomAccessFile("output.txt","r");
+		int x,i=1;
+		rf.seek(i);
+		x=rf.read();
+		while(true)
+		{
+			System.out.print((char)x);
+			i+=2;
+			rf.seek(i);
+			x=rf.read();
+			if(x==-1)
+				break;
+		}
+		rf.close();
+	}
+}
+		
